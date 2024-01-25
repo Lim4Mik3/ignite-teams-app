@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useTheme } from 'styled-components';
 import { AirplaneLanding } from 'phosphor-react-native'
 
-export default function Home() {
+export default function New() {
   const { COLORS } = useTheme();
 
   return (
