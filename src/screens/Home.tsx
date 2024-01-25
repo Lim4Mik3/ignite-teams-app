@@ -2,6 +2,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useTheme } from 'styled-components';
+import { AirplaneLanding } from 'phosphor-react-native'
 
 export default function Home() {
   const { COLORS } = useTheme();
@@ -10,6 +11,8 @@ export default function Home() {
     <View style={[styles.container, { backgroundColor: COLORS.GRAY_400 }]}>
       <Text>Ignite Teams</Text>
       <StatusBar style="auto" />
+
+      <AirplaneLanding size={80} />
     </View>
   );
 }
