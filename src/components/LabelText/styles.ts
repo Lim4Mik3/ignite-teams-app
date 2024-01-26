@@ -6,12 +6,12 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 24;
+  font-size: 24px;
   color: ${({ theme }) => theme.COLORS.WHITE};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
 `;
 
 export const Subtitle = styled.Text`
-  font-size: 16;
+  font-size: 16px;
   color: ${({ theme }) => theme.COLORS.GRAY_300};
 `;

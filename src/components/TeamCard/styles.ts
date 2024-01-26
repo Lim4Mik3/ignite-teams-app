@@ -10,7 +10,7 @@ export const Container = styled.TouchableOpacity`
 `;
 
 export const Title = styled.Text`
-  font-size: 18;
+  font-size: 18px;
   line-height: 28px;
   color: ${({ theme }) => theme.COLORS.GRAY_100};
 `;

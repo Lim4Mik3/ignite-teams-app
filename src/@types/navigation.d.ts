@@ -1,7 +1,8 @@
 export declare global {
   namespace ReactNavigation {
     interface RootParamList {
-      new: undefined;
+      teams: undefined;
+      'add-new-group': undefined;
     }
   }
 }

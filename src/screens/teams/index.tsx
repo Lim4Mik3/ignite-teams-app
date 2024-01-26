@@ -5,10 +5,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Header } from '@components/Header';
 import { LabelText } from '@components/LabelText';
 import { TeamCard } from '@components/TeamCard';
-import { ButtonTitle, FooterButton } from './styles';
+import { useNavigation } from '@react-navigation/native';
+import { LargeButton } from '@components/LargeButton';
 
 export default function Teams() {
   const { COLORS } = useTheme();
+
+  const navigation = useNavigation();
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: COLORS.GRAY_400 }]}>
@@ -32,9 +35,11 @@ export default function Teams() {
         }
       />
 
-      <FooterButton activeOpacity={0.7}>
-        <ButtonTitle>Criar nova turma</ButtonTitle>
-      </FooterButton>
+      <LargeButton 
+        onPress={() => navigation.navigate('add-new-group')}
+      >
+        Criar nova turma
+      </LargeButton>
     </SafeAreaView>
   );
 }

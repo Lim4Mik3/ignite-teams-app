@@ -1,16 +1,16 @@
 import styled from "styled-components/native";
 
-export const FooterButton = styled.TouchableOpacity`
+export const Container = styled.TouchableOpacity`
   margin: 10px 0;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
-  background-color: ${({ theme }) => theme.COLORS.GREEN_500};
   padding: 16px 0;
   border-radius: 6px;
 `;
 
-export const ButtonTitle = styled.Text`
+export const Title = styled.Text`
   font-size: 16px;
   line-height: 24px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
